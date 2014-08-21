@@ -1,0 +1,20 @@
+<ion-view title="Today's Catch">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header">
+    <ion-list>
+      <ion-item ng-repeat="playlist in playlists" href="#" class="item item-thumbnail-left item-icon-right">
+          <img src="img/albums/{{playlist.albumArt}}">
+          <h2>{{playlist.artist}}</h2>
+          <p>{{playlist.song}}</p>
+          <img src="img/users/003F0000014uMtnIAE_large_thumbnail.jpg" alt="" style="position: absolute;
+top: 10px;
+right: 10px;
+max-width: 50px;
+max-height: 50px;
+width: 100%;border-radius: 25px;">
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

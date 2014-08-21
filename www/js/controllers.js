@@ -33,15 +33,25 @@ angular.module('starter.controllers', [])
   };
 })
 
-.controller('PlaylistsCtrl', function($scope) {
+.controller('TodaysCatchCtrl', function($scope) {
   $scope.playlists = [
-    { title: 'Reggae', id: 1 },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
+    { artist: 'Dr. Dre', song: 'Song Name', id: 1, albumArt: 'album1.jpg', user: '', userIcon: '' },
+    { artist: 'Kid Cudi', song: 'Song Name', id: 2, albumArt: 'album2.jpg', user: '', userIcon: '' },
+    { artist: 'Outkast', song: 'Song Name', id: 3, albumArt: 'album3.jpg', user: '', userIcon: '' },
+    { artist: 'Kendrick Lamar', song: 'Song Name', id: 4, albumArt: 'album4.jpg', user: '', userIcon: '' },
+    { artist: 'Schoolboy Q', song: 'Song Name', id: 5, albumArt: 'album5.jpg', user: '', userIcon: '' },
+    { artist: 'Wu-Tang Clan', song: 'Song Name', id: 6, albumArt: 'album6.jpg', user: '', userIcon: '' },
+    { artist: 'LCD Soundsystem', song: 'Song Name', id: 7, albumArt: 'album7.jpg', user: '', userIcon: '' },
+    { artist: 'Dr. Dre', song: 'Song Name', id: 8, albumArt: 'album1.jpg', user: '', userIcon: '' },
+    { artist: 'Kid Cudi', song: 'Song Name', id: 9, albumArt: 'album2.jpg', user: '', userIcon: '' },
+    { artist: 'Outkast', song: 'Song Name', id: 10, albumArt: 'album3.jpg', user: '', userIcon: '' },
+    { artist: 'Kendrick Lamar', song: 'Song Name', id: 11, albumArt: 'album4.jpg', user: '', userIcon: '' },
+    { artist: 'Schoolboy Q', song: 'Song Name', id: 12, albumArt: 'album5.jpg', user: '', userIcon: '' },
+    { artist: 'Wu-Tang Clan', song: 'Song Name', id: 13, albumArt: 'album6.jpg', user: '', userIcon: '' },
+    { artist: 'LCD Soundsystem', song: 'Song Name', id: 14, albumArt: 'album7.jpg', user: '', userIcon: '' }
   ];
+
+  // Create timeout to add new tracks every X seconds
 })
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {
