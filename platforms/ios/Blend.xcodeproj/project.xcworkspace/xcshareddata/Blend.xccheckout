@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>79EF2D09-06EE-4887-BF1A-11DA40448DB0</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Blend</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9E3B1F01-38D3-4D88-B1BE-EDAE5E36FAF0</key>
+		<string>https://github.com/cmoody/Blend.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>platforms/ios/Blend.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9E3B1F01-38D3-4D88-B1BE-EDAE5E36FAF0</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/cmoody/Blend.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9E3B1F01-38D3-4D88-B1BE-EDAE5E36FAF0</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9E3B1F01-38D3-4D88-B1BE-EDAE5E36FAF0</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Blend</string>
+		</dict>
+	</array>
+</dict>
+</plist>

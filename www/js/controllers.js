@@ -33,7 +33,7 @@ angular.module('starter.controllers', [])
   };
 })
 
-.controller('TodaysCatchCtrl', function($scope) {
+.controller('TodaysCatchCtrl', function($scope, $interval) {
   $scope.playlists = [
     { artist: 'Dr. Dre', song: 'Song Name', id: 1, albumArt: 'album1.jpg', user: '', userIcon: '' },
     { artist: 'Kid Cudi', song: 'Song Name', id: 2, albumArt: 'album2.jpg', user: '', userIcon: '' },
@@ -41,7 +41,11 @@ angular.module('starter.controllers', [])
     { artist: 'Kendrick Lamar', song: 'Song Name', id: 4, albumArt: 'album4.jpg', user: '', userIcon: '' },
     { artist: 'Schoolboy Q', song: 'Song Name', id: 5, albumArt: 'album5.jpg', user: '', userIcon: '' },
     { artist: 'Wu-Tang Clan', song: 'Song Name', id: 6, albumArt: 'album6.jpg', user: '', userIcon: '' },
-    { artist: 'LCD Soundsystem', song: 'Song Name', id: 7, albumArt: 'album7.jpg', user: '', userIcon: '' },
+    { artist: 'LCD Soundsystem', song: 'Song Name', id: 7, albumArt: 'album7.jpg', user: '', userIcon: '' }
+  ];
+
+  // Create timeout to add new tracks every X seconds
+  var newPlaylists = [
     { artist: 'Dr. Dre', song: 'Song Name', id: 8, albumArt: 'album1.jpg', user: '', userIcon: '' },
     { artist: 'Kid Cudi', song: 'Song Name', id: 9, albumArt: 'album2.jpg', user: '', userIcon: '' },
     { artist: 'Outkast', song: 'Song Name', id: 10, albumArt: 'album3.jpg', user: '', userIcon: '' },
@@ -51,7 +55,27 @@ angular.module('starter.controllers', [])
     { artist: 'LCD Soundsystem', song: 'Song Name', id: 14, albumArt: 'album7.jpg', user: '', userIcon: '' }
   ];
 
-  // Create timeout to add new tracks every X seconds
+  var count = 0;
+
+  var stop = $interval(function() {
+    $scope.stopInterval();
+
+    $scope.playlists.unshift(newPlaylists[count]);
+
+    count++;
+    
+  }, 5000);
+
+  $scope.stopInterval = function() {
+      if(count >= newPlaylists.length - 1) {
+        $interval.cancel(stop);
+        stop = undefined;
+      }
+    };
+
+  $scope.onSwipeLeft = function() {
+    console.log("Swipe Left");
+  };
 })
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {
