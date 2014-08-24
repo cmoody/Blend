@@ -4,7 +4,8 @@
   </ion-nav-buttons>
   <ion-content class="has-header">
     <ion-list>
-      <ion-item ng-repeat="playlist in playlists" href="#" class="animate-repeat item item-thumbnail-left item-icon-right" on-swipe-left="onSwipeLeft()">
+      <ion-item ng-repeat="playlist in playlists"
+        class="animate-repeat item item-thumbnail-left item-icon-right">
           <img ng-src="img/albums/{{playlist.albumArt}}">
           <h2>{{playlist.artist}}</h2>
           <p>{{playlist.song}}</p>

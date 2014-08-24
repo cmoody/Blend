@@ -72,10 +72,6 @@ angular.module('starter.controllers', [])
         stop = undefined;
       }
     };
-
-  $scope.onSwipeLeft = function() {
-    console.log("Swipe Left");
-  };
 })
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {
