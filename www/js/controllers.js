@@ -74,5 +74,7 @@ angular.module('starter.controllers', [])
     };
 })
 
-.controller('PlaylistCtrl', function($scope, $stateParams) {
+.controller('NowPlayingCtrl', function($scope, $stateParams) {
+
+  
 });
